@@ -12,5 +12,3 @@ app.listen(3000, () => {
 
     console.log('started on container 3000')
 })
-
-console.log(typeof(app));

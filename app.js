@@ -6,6 +6,5 @@ app.get('/', function (req, res) {
     res.send("Hello World");
 });
 app.listen(3000, function () {
-    console.log('started on 3000');
+    console.log('started on container 3000');
 });
-console.log(typeof (app));
