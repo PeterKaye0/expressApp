@@ -8,4 +8,4 @@ WORKDIR /home/expressApp
 
 EXPOSE 3000
 
-ENTRYPOINT [ "node", "app.js" ]
+ENTRYPOINT [ "node", "./dist/app.js" ]
