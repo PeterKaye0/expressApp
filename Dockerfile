@@ -3,7 +3,7 @@ FROM node:latest
 COPY . ./home/expressApp
 WORKDIR /home/expressApp
 
-#RUN "npm install express"
+#ßRUN "npm install express"
 #RUN "npm install typescript"
 
 EXPOSE 3000
