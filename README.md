@@ -22,3 +22,15 @@ To run the application locally (via container) on your machine, run:
 ```
 yarn start
 ```
+## Endpoints
+
+Available endpoints
+
+```
+GET /
+GET /api/books
+GET /api/book/{id}
+GET /api/duck
+
+POST /api/books/addbook {title: '', author: '' }
+```
