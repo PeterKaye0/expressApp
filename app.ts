@@ -52,7 +52,7 @@ app.get('/api/duck', async (req:Request, res: Response) => {
 
 
 app.listen(3000, () => {
-    console.log('started on container 3000');
+    console.log('started on localhost');
 })
 
 export default app;
