@@ -1,5 +1,6 @@
 import express, { Express, Request, Response } from 'express';
 import bodyParser from 'body-parser'
+import path from 'path'
 
 const app: any = express()
 app.use(bodyParser.json());
@@ -36,10 +37,22 @@ app.post('/api/books/addbook', (req: Request, res: Response) => {
     res.send(booksList)
 });
 
+app.get('/api/duck', async (req:Request, res: Response) => {
+
+    try{
+    console.log('getting duck')
+    let duckraw = await fetch('https://random-d.uk/api/v2/random')
+    let duckjson = await duckraw.json();
+    res.send(`<html><img src=${duckjson.url}></html>`);
+    }
+    catch{
+        console.log('💩');
+    }
+});
+
 
 app.listen(3000, () => {
-
-    console.log('started on container 3000')
+    console.log('started on container 3000');
 })
 
 export default app;
